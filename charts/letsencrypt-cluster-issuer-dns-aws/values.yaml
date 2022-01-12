@@ -1,0 +1,6 @@
+email: foo@example.com
+domain: example.com
+aws:
+  region: eu-west-1
+  zoneId: example
+  roleArn: arn:aws:iam::1234567890:role/cert-manager
