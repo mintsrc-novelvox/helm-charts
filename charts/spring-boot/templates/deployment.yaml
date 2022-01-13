@@ -56,7 +56,7 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
             - name: SPRING_PROFILES_ACTIVE
-              value: {{- include "spring-boot.profiles" . }}
+              value: {{ include "spring-boot.profiles" . | quote}}
             - name: SPRING_APPLICATION_JSON
               valueFrom:
                 configMapKeyRef:
