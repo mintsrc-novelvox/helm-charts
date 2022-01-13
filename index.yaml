@@ -14,6 +14,16 @@ entries:
   spring-boot:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2022-01-13T16:51:50.200626229Z"
+    description: A Helm chart for Kubernetes
+    digest: e87f9456480b37c4affb3f814a9a37b43e706e58d70776497a8a9dbad438c097
+    name: spring-boot
+    type: application
+    urls:
+    - https://github.com/mintsrc-novelvox/helm-charts/releases/download/spring-boot-0.0.2/spring-boot-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2022-01-13T12:43:02.059474126Z"
     description: A Helm chart for Kubernetes
     digest: ed045abc4f8759a8a1bf09b30b3ca908105b75b809ae26cef2fac89bce39d2ca
