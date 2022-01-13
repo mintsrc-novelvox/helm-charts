@@ -3,8 +3,10 @@ email: foo@example.com
 cluster: false
 
 solvers:
-  domains:
-    - example.com
-  aws:
-    region: eu-west-1
-    zoneId: 1234567890
+  - selectors:
+      dnsZones:
+        - "example.com"
+    dns01:
+      aws:
+        region: eu-west-1
+        zoneId: 0123456789

@@ -12,5 +12,6 @@ spec:
     email: {{ .Values.email }}
     privateKeySecretRef:
       name: {{ include "letsencrypt-issuers.fullname" . }}
-    {{- toYaml .Values.solvers | nindent 4 }}
+    solvers:
+      {{- toYaml .Values.solvers | nindent 6 }}
 {{- end }}
