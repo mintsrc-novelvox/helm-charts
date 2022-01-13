@@ -14,6 +14,16 @@ entries:
   letsencrypt-issuers:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2022-01-13T19:37:08.507628073Z"
+    description: A Helm chart for Kubernetes
+    digest: 95bcbf20bd7602193b36cd6820de07ad87fdb37cbeff84f1e0c14d70ddc8eccc
+    name: letsencrypt-issuers
+    type: application
+    urls:
+    - https://github.com/mintsrc-novelvox/helm-charts/releases/download/letsencrypt-issuers-0.0.2/letsencrypt-issuers-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2022-01-13T17:36:48.797701496Z"
     description: A Helm chart for Kubernetes
     digest: 26b162f047bb5353018873653bd8312e3987382e82ce1cb3034789d35074b902
