@@ -1,0 +1,15 @@
+{{- if .Values.autoscaling.enabled -}}
+{{- if .Values.dashboards.enabled -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "spring-boot.fullname" . }}-hpa
+  labels:
+    grafana_dashboard: "1"
+    {{- include "spring-boot.labels" . | nindent 4 }}
+  namespace: cattle-dashboards # Change if using a non-default namespace
+data:
+  {{ include "spring-boot.fullname" . }}-hpa.json: |-
+{{ .Files.Get "hpa.json" | indent 4 }}
+{{- end }}
+{{- end }}
