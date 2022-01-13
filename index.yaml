@@ -11,4 +11,15 @@ entries:
     urls:
     - https://github.com/mintsrc-novelvox/helm-charts/releases/download/letsencrypt-cluster-issuer-dns-aws-0.1.0/letsencrypt-cluster-issuer-dns-aws-0.1.0.tgz
     version: 0.1.0
+  spring-boot:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2022-01-13T12:43:02.059474126Z"
+    description: A Helm chart for Kubernetes
+    digest: ed045abc4f8759a8a1bf09b30b3ca908105b75b809ae26cef2fac89bce39d2ca
+    name: spring-boot
+    type: application
+    urls:
+    - https://github.com/mintsrc-novelvox/helm-charts/releases/download/spring-boot-0.0.1/spring-boot-0.0.1.tgz
+    version: 0.0.1
 generated: "2022-01-12T11:50:25.790717931Z"
