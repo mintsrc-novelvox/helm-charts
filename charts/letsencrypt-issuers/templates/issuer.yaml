@@ -1,0 +1,16 @@
+{{- if not .Values.cluster -}}
+---
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: {{ include "letsencrypt-issuers.fullname" . }}
+  labels:
+    {{- include "letsencrypt-issuers.labels" . | nindent 4 }}
+spec:
+  acme:
+    server: https://acme-staging-v02.api.letsencrypt.org/directory
+    email: {{ .Values.email }}
+    privateKeySecretRef:
+      name: {{ include "letsencrypt-issuers.fullname" . }}
+    {{- toYaml .Values.solvers | nindent 4 }}
+{{- end }}

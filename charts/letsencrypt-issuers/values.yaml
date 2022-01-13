@@ -1,0 +1,10 @@
+email: foo@example.com
+
+cluster: false
+
+solvers:
+  domains:
+    - example.com
+  aws:
+    region: eu-west-1
+    zoneId: 1234567890
